@@ -1,28 +1,28 @@
 (ns metabase.driver.sparksql-databricks
   (:require [clojure
-             [set :as set]
-             [string :as str]]
+            [set :as set]
+            [string :as str]]
             [clojure.java.jdbc :as jdbc]
             [honeysql
-             [core :as hsql]
-             [helpers :as h]]
+            [core :as hsql]
+            [helpers :as h]]
             [medley.core :as m]
             [metabase.driver :as driver]
             [metabase.driver.hive-like :as hive-like]
             [metabase.driver.sql
-             [query-processor :as sql.qp]
-             [util :as sql.u]]
+            [query-processor :as sql.qp]
+            [util :as sql.u]]
             [metabase.driver.sql-jdbc
-             [common :as sql-jdbc.common]
-             [connection :as sql-jdbc.conn]
-             [execute :as sql-jdbc.execute]
-             [sync :as sql-jdbc.sync]]
+            [common :as sql-jdbc.common]
+            [connection :as sql-jdbc.conn]
+            [execute :as sql-jdbc.execute]
+            [sync :as sql-jdbc.sync]]
             [metabase.driver.sql.util.unprepare :as unprepare]
             [metabase.mbql.util :as mbql.u]
             [metabase.models.field :refer [Field]]
             [metabase.query-processor
-             [store :as qp.store]
-             [util :as qputil]]
+            [store :as qp.store]
+            [util :as qputil]]
             [metabase.util.honeysql-extensions :as hx])
   (:import [java.sql Connection ResultSet]))
 
